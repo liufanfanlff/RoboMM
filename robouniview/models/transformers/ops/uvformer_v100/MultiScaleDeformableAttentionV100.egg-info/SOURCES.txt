@@ -1,0 +1,12 @@
+setup.py
+/project/robotic/robo_mm/robouniview/models/transformers/ops/uvformer_v100/src/vision.cpp
+/project/robotic/robo_mm/robouniview/models/transformers/ops/uvformer_v100/src/cpu/ms_deform_attn_cpu.cpp
+/project/robotic/robo_mm/robouniview/models/transformers/ops/uvformer_v100/src/cuda/ms_deform_attn_cuda.cu
+MultiScaleDeformableAttentionV100.egg-info/PKG-INFO
+MultiScaleDeformableAttentionV100.egg-info/SOURCES.txt
+MultiScaleDeformableAttentionV100.egg-info/dependency_links.txt
+MultiScaleDeformableAttentionV100.egg-info/top_level.txt
+functions/__init__.py
+functions/ms_deform_attn_func.py
+modules/__init__.py
+modules/ms_deform_attn.py

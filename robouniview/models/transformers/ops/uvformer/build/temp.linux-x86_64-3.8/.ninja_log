@@ -1,0 +1,7 @@
+# ninja log v5
+49	37615	1711530748000000000	/workspace/RoboFlamingo/lff_vision/ops/bevformer/build/temp.linux-x86_64-3.8/workspace/RoboFlamingo/lff_vision/ops/bevformer/src/cpu/ms_deform_attn_cpu.o	47ba4b1a63960a8c
+73	68979	1711530780000000000	/workspace/RoboFlamingo/lff_vision/ops/bevformer/build/temp.linux-x86_64-3.8/workspace/RoboFlamingo/lff_vision/ops/bevformer/src/cuda/ms_deform_attn_cuda.o	515b0620e9a4f0c3
+34	80701	1711530791000000000	/workspace/RoboFlamingo/lff_vision/ops/bevformer/build/temp.linux-x86_64-3.8/workspace/RoboFlamingo/lff_vision/ops/bevformer/src/vision.o	1db490a75aab9cf
+29	27874	1728560725000000000	/project/robotic/robo_mm/robouniview/models/transformers/ops/uvformer/build/temp.linux-x86_64-3.8/project/robotic/robo_mm/robouniview/models/transformers/ops/uvformer/src/cpu/ms_deform_attn_cpu.o	b73b624ced8640c6
+26	49920	1728560747000000000	/project/robotic/robo_mm/robouniview/models/transformers/ops/uvformer/build/temp.linux-x86_64-3.8/project/robotic/robo_mm/robouniview/models/transformers/ops/uvformer/src/vision.o	3e4fb215862d9c1e
+29	58021	1728560755000000000	/project/robotic/robo_mm/robouniview/models/transformers/ops/uvformer/build/temp.linux-x86_64-3.8/project/robotic/robo_mm/robouniview/models/transformers/ops/uvformer/src/cuda/ms_deform_attn_cuda.o	44c0cd3a878b9508
