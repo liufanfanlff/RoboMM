@@ -1,5 +1,8 @@
+# RoboMM: All-in-One Multimodal Large Model for Robotic Manipulation
+### 🚩[Project Page](https://robouniview.github.io/RoboMM.github.io/) | 📑[Paper](XXX) | 🤗[Data](https://huggingface.co/datasets/liufanfanlff/RoboData)
 
-**RoboMM**
+
+This is the code for RoboMM: All-in-One Multimodal Large Model for Robotic Manipulation.
 
 In recent years, robotics has advanced significantly through the integration of larger models and large-scale datasets. However, challenges remain in applying these models to 3D spatial interactions and managing data collection costs. To address these issues, we propose the multimodal robotic manipulation model, **RoboMM**, along with the comprehensive dataset, **RoboData**.
 **RoboMM** enhances 3D perception through camera parameters and occupancy supervision. Building on OpenFlamingo, it incorporates Modality-Isolation-Mask and multimodal decoder blocks, improving modality fusion and fine-grained perception. % , thus boosting performance in robotic manipulation tasks.
