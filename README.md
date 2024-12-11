@@ -16,9 +16,9 @@ Its design significantly enhances robotic manipulation performance, increasing t
 
 
 ## Performance
-<p align="center" style="background-color: white;">
-  <img src="./results.png" style="width: 100%; margin: 0 auto; text-align: center"/>
-</p>
+<div style="background-color: white; display: inline-block;">
+  <img src="./results.png" style="display: block;" />
+</div>
 
 ## :fire: Updates
 - **2024.12**: We release RoboMM paper on arxiv！We release the training and inference code!
