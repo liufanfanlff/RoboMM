@@ -1,0 +1,51 @@
+pip install git+https://github.com/stepjam/RLBench.git
+conda install -c "nvidia/label/cuda-11.8.0" cuda-toolkit
+
+
+ImportError: ('Unable to load OpenGL library', "/software/anaconda3/envs/RBMM214/lib/python3.8/site-packages/PIL/../../../././libstdc++.so.6:
+version `GLIBCXX_3.4.30' not found (required by /lib/x86_64-linux-gnu/libLLVM-15.so.1)", 'libOSMesa.so.8', 'libOSMesa.so.8')
+
+cd /software/anaconda3/envs/RBMM214/lib/python3.8/site-packages/PIL/../../../././
+mv libstdc++.so.6 libstdc++.so.6.old
+ln -s /usr/lib/x86_64-linux-gnu/libstdc++.so.6 libstdc++.so.6
+
+
+
+Compiling /software/anaconda3/envs/RBMM214/lib/python3.8/site-packages/mujoco_py/cymj.pyx because it changed.
+[1/1] Cythonizing /software/anaconda3/envs/RBMM214/lib/python3.8/site-packages/mujoco_py/cymj.pyx
+performance hint: /software/anaconda3/envs/RBMM214/lib/python3.8/site-packages/mujoco_py/cymj.pyx:67:5: Exception check on 'c_warning_callback' will always require the GIL to be acquired.
+Possible solutions:
+        1. Declare 'c_warning_callback' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+        2. Use an 'int' return type on 'c_warning_callback' to allow an error code to be returned.
+performance hint: /software/anaconda3/envs/RBMM214/lib/python3.8/site-packages/mujoco_py/cymj.pyx:104:5: Exception check on 'c_error_callback' will always require the GIL to be acquired.
+Possible solutions:
+        1. Declare 'c_error_callback' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+        2. Use an 'int' return type on 'c_error_callback' to allow an error code to be returned.
+
+Error compiling Cython file:
+------------------------------------------------------------
+...
+    See c_warning_callback, which is the C wrapper to the user defined function
+    '''
+    global py_warning_callback
+    global mju_user_warning
+    py_warning_callback = warn
+    mju_user_warning = c_warning_callback
+                       ^
+------------------------------------------------------------
+
+/software/anaconda3/envs/RBMM214/lib/python3.8/site-packages/mujoco_py/cymj.pyx:92:23: Cannot assign type 'void (const char *) except * nogil' to 'void (*)(const char *) noexcept nogil'. Exception values are incompatible. Suggest adding 'noexcept' to the type of 'c_warning_callback'.
+
+Error compiling Cython file:
+------------------------------------------------------------
+...
+    See c_warning_callback, which is the C wrapper to the user defined function
+    '''
+    global py_error_callback
+    global mju_user_error
+    py_error_callback = err_callback
+    mju_user_error = c_error_callback
+                     ^
+------------------------------------------------------------
+
+pip install Cython==0.29.14
