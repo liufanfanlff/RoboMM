@@ -4,6 +4,10 @@
 
 This is the unorganized version of the code for RoboMM: All-in-One Multimodal Large Model for Robotic Manipulation.
 
+> RoboMM: All-in-One Multimodal Large Model for Robotic Manipulation <br>
+> [Fen Yan](https://scholar.google.com.hk/citations?user=gO4divAAAAAJ&hl=zh-CN&oi=sra)\*, [Fanfan Liu](https://scholar.google.com/citations?user=LPaXZEUAAAAJ&hl=en)\*, [Liming Zheng](), [Yufeng Zhong](), [Yiyang Huang](), [Zechao Guan](), [Chenjian Feng](https://fcjian.github.io/), [Lin Ma](http://forestlinma.com/)† <br>
+> *Equal Contribution   †Corresponding Authors
+
 In recent years, robotics has advanced significantly through the integration of larger models and large-scale datasets. However, challenges remain in applying these models to 3D spatial interactions and managing data collection costs. To address these issues, we propose the multimodal robotic manipulation model, **RoboMM**, along with the comprehensive dataset, **RoboData**.
 **RoboMM** enhances 3D perception through camera parameters and occupancy supervision. Building on OpenFlamingo, it incorporates Modality-Isolation-Mask and multimodal decoder blocks, improving modality fusion and fine-grained perception. % , thus boosting performance in robotic manipulation tasks.
 **RoboData** offers the complete evaluation system by integrating several well-known datasets, achieving the first fusion of multi-view images, camera parameters, depth maps, and actions, and the space alignment facilitates comprehensive learning from diverse robotic datasets.
@@ -12,7 +16,12 @@ Its design significantly enhances robotic manipulation performance, increasing t
 
 
 ## Performance
-![results](results.png)
+<p align="center" style="background-color: white;">
+  <img src="./results.png" style="width: 100%; margin: 0 auto; text-align: center"/>
+</p>
+
+## :fire: Updates
+- **2024.12**: We release RoboMM paper on arxiv！We release the training and inference code!
 
 
 ## Training the model (using DDP):
@@ -26,6 +35,13 @@ bash tools/train.sh 8 --config ${config}
 ```
 bash tools/test.sh 8 ${ckpt}
 ```
+
+## :white_check_mark: TODO
+- [x] RoboMM traing code
+- [x] RoboMM inference code
+- [x] RoboMM evaluation code
+- [ ] RoboMM training data
+- [ ] RoboMM model
 
 ## Acknowledgment
 
