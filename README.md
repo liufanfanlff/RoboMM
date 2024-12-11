@@ -17,7 +17,7 @@ Its design significantly enhances robotic manipulation performance, increasing t
 
 ## Performance
 <div style="background-color: white; display: inline-block;">
-  <img src="./results.png" alt="Results" />
+  <img src="assert/results.jpg" alt="Results" />
 </div>
 
 ## :fire: Updates
