@@ -100,7 +100,7 @@ License: [MIT](https://github.com/RoboFlamingo/RoboFlamingo/blob/main/LICENSE)
 
 ## Cite our work:
 ```
-@misc{yan2024robommallinonemultimodallarge,
+@misc{yan2024robomm,
       title={RoboMM: All-in-One Multimodal Large Model for Robotic Manipulation}, 
       author={Feng Yan and Fanfan Liu and Liming Zheng and Yufeng Zhong and Yiyang Huang and Zechao Guan and Chengjian Feng and Lin Ma},
       year={2024},
