@@ -25,7 +25,9 @@ Its design significantly enhances robotic manipulation performance, increasing t
 
 
 ## Training the model (using DDP):
-
+Currently, the Calvin data has been fully uploaded, and RoboMM can now be trained using only the Calvin dataset
+  
+  Download the data from [Data](https://huggingface.co/datasets/liufanfanlff/RoboData) and extract it. Modify the corresponding paths in the config file and use the following files for training.
 ```
 bash tools/train.sh 8 --config ${config}
 
